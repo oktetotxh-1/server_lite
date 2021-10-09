@@ -1,6 +1,5 @@
 FROM ubuntu
 RUN apt update
-RUN apt upgrade -y
 RUN apt install ssh wget npm -y
 RUN npm install -g wstunnel
 RUN mkdir /run/sshd 
