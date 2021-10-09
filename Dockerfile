@@ -1,6 +1,6 @@
 FROM ubuntu
 RUN apt update
-RUN apt install ssh wget npm -y
+RUN DEBIAN_FRONTEND=noninteractive apt install ssh wget npm -y
 RUN npm install -g wstunnel
 RUN mkdir /run/sshd 
 RUN echo 'wstunnel -s 0.0.0.0:80 &' >>/runstart.sh
