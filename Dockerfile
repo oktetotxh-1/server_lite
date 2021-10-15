@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:20.04
 RUN apt update
 RUN DEBIAN_FRONTEND=noninteractive apt install ssh wget npm -y
 RUN npm install -g wstunnel
